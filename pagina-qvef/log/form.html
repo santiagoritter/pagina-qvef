@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="cabeza">
+        <header>
+            <ul>
+                <li><a href="/home/index.html">Inicio</a></li>
+                <li><a href="/log/login.html">Login</a></li>
+            </ul>
+        </header>
+    </div>
+    <main>
+        <div class="login">
+            <form action="/log/form.php" method="post">
+                <input class="ingreso" type="text" name="nombre" placeholder="Ingersar Nombre" required>
+                <input class="ingreso" type="text" name="apellido" placeholder="Ingresar Apellido" required>
+                <input class="ingreso" type="email" name="email" placeholder="Ingresar email" required>
+                <input class="ingreso" type="text" name="direccion" placeholder="Ingresar direccion" required>
+                <input class="ingreso" type="password" name="contrasena" placeholder="Ingresar contrasena" required>
+                <input class="ingreso" type="text" name="telefono" placeholder="Ingresar telefono" required>
+            
+                <label>
+                    <input type="checkbox">
+                    <p>Acepto los <a href="#">Terminos y Condiciones</a></a></p>
+                </label>
+                <input class="boton" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="pie">
+            <div class="subpie1">
+
+            </div>
+            <div class="subpie2">
+                <p>Copyright© 2024 Miceli Francisco & Tabuada Lorenzo. Todos los derechos reservados.</p>
+                <a href="#">Terminos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
