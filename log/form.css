@@ -8,7 +8,6 @@
     box-sizing:border-box ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 body{
     background-image: url('/img/cancha-esquina.jpg');
     background-repeat: no-repeat;
@@ -23,13 +22,8 @@ main{
     background: var(--color-primario);
     padding: 15px;
     transition: 0.3s;
-}
-.cabeza:hover{
     background-color: var(--color-secundario);
     box-shadow: 0px 10px 37px rgb(42, 0, 104);
-}
-.cabeza:hover a{
-    color: #fff;
 }
 .cabeza ul{
     list-style-type: none;
@@ -41,7 +35,7 @@ main{
 }
 .cabeza a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     transition: 0.3s;
 }
 .cabeza a:hover{
@@ -70,12 +64,12 @@ main{
     padding: 12px 10px;
     font-size: 15px;
     color: rgb(197, 197, 197);
-    background: rgb(31, 31, 31);
+    background: rgb(41, 41, 41);
     outline: none;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 .ingreso:hover{
-    border-radius: 15px;
+    border-radius: 10px;
     border: 2px solid var(--color-secundario);
     box-shadow: 4px 4px 37px rgba(33, 0, 83, 0.49);
 }
