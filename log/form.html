@@ -9,6 +9,7 @@
 <body>
     <header>
         <div class="cabeza">
+            <img src="/img/logo_negro_QVEF.png" alt="Logo">
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/log/login.html">Login</a></li>
@@ -16,20 +17,22 @@
         </div>
     </header>
     <main>
-        <div class="login">
-            <form action="/log/form.php" method="post">
-                <input class="ingreso" type="text" name="nombre" placeholder="Ingersar Nombre" required>
-                <input class="ingreso" type="text" name="apellido" placeholder="Ingresar Apellido" required>
+        <div>
+            <form class="login" action="/log/form.php" method="post">
+                <input class="ingreso" type="text" name="nombre" placeholder="Ingresar Nombre" required>
+                <input class="ingreso" type="text" name="apellido" placeholder="Ingresar Apellido" required >
                 <input class="ingreso" type="email" name="email" placeholder="Ingresar email" required>
                 <input class="ingreso" type="text" name="direccion" placeholder="Ingresar direccion" required>
                 <input class="ingreso" type="password" name="contrasena" placeholder="Ingresar contrasena" required>
                 <input class="ingreso" type="text" name="telefono" placeholder="Ingresar telefono" required>
-            
-                <label>
+                <label class="terminoscondiciones">
                     <input class="checkbox" type="checkbox">
                     <p>Acepto los <a href="#">Terminos y Condiciones</a></a></p>
                 </label>
-                <input class="boton" type="submit" value="Enviar">
+                <div class="div-boton">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+
             </form>
         </div>
     </main>

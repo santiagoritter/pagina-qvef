@@ -9,7 +9,6 @@
 }
 body{
     background-color: #bdb9b9;
-
 }
 main{
     min-height: 100vh;
@@ -21,13 +20,14 @@ main{
 }
 .logohead{
     width: 100px;
-    padding: 8px ;
+    padding: 10px 10px 0 5px;
 }
 .medioHC{
     display: flex;
     align-items: center;
 }
 .tolva{
+    display: none;
     width: 25px;
     height: 25px;
     padding: 0 10px 0 0;
@@ -59,7 +59,7 @@ main{
 .icons{
     width: 25px;
     height: 25px;
-    padding: 0 10px;
+    padding: 0 5px 0 15px;
 }
 .contenedorbusqueda{
     display: flex;
@@ -106,21 +106,28 @@ main{
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    background-color: var(--color-primario);
-    box-shadow: 0 0 5px var(--color-secundario);
+    background-color: #222;
+    box-shadow: 0 0 5px #fff;
     right: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 .perfilcategorias li{
     list-style: none;
 }
 .perfilcategorias a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     transition: 0.1s;
 }
 .perfilcategorias a:hover{
-    color: var(--color-secundario);
+    color: #777;
+}
+.generos a{
+    color: #fff;
+    text-decoration: none;
+}
+.generos a:hover{
+    text-decoration: underline;
 }
 .pie{
     background-color: #000000;
@@ -143,12 +150,10 @@ main{
 }
 .generos ul{
     display: flex;
-    
+    justify-content: space-evenly;
+    list-style: none;
 }
-.generos a{
-    color: #fff;
-    text-decoration: none;
-}
+
 @media(min-width: 768px){
     .contenedorbusqueda{
         display: flex;
@@ -174,5 +179,8 @@ main{
     .contenedorbusqueda img{
         width: 30px;
         height: 30px;
+    }
+    .tolva{
+        display: flex;
     }
 }
