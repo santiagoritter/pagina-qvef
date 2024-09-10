@@ -1,121 +1,162 @@
-:root{
-    --color-primario:rgb(34, 34, 34);
-    --color-secundario: rgb(92, 17, 157);
+html{
+    scroll-behavior: smooth;
 }
-*{
+body{
     margin: 0;
     padding: 0;
-    box-sizing:border-box ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "inria Sans", 'Franklin Gothic Medium', 'Arial Narrow';
+    font-style: normal;
+    background-color: #222;
 }
-
-body{
-    background-image: url('/img/cancha-esquina.jpg');
+.inicio{
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(/img/monumental2.jpeg);
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center ;
-    height: 100%; /*el vh es viewport height y es para que la imagen ocupe el 100% de la ventana del navegador*/
-}
-main{
     min-height: 100vh;
-}
-.cabeza{
-    background: var(--color-primario);
-    padding: 15px;
-    transition: 0.3s;
-}
-.cabeza:hover{
-    background-color: var(--color-secundario);
-    box-shadow: 0px 10px 37px rgb(42, 0, 104);
-}
-.cabeza:hover a{
-    color: #fff;
-}
-.cabeza ul{
-    list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
 }
-.cabeza li{
-    margin-right: 40px;
-    font-size: 25px;    
+h1{
+    margin: 0;
+    color: #fff;
+    font-size: 8em;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-shadow: 9px 0px 0 #acacac;
 }
-.cabeza a{
+@media(max-width: 480px){
+    h1{
+        font-size: 6em;
+    }
+    @media(max-width: 380px){
+        h1{
+            font-size: 5em;
+        }
+    }
+    @media(max-width: 320px){
+        h1{
+            font-size: 4em;
+        }
+    }
+}
+.inicio .material-symbols-outlined {
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
     text-decoration: none;
-    color: #000;
     transition: 0.3s;
 }
-.cabeza a:hover{
-    text-decoration:underline;
+.inicio .material-symbols-outlined:hover{
+    transform: scale(1.5);
+    text-shadow: 0 0 20px #ddd;
+}
+
+
+form{
+    max-width: 430px;
+    text-align: center;
+    margin: 70px auto 50px;
+    background: #222;
+    color: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 0 50px #000;
+    border-radius: 11px;
+}
+
+.imagen{
+    width:100%;
+}
+.imagen img{
+    width: 70%;
+    min-width: 250px;
+    transition: 0.3s;
+}
+.imagen img:hover{
+    filter: drop-shadow(0px 0px 10px #555);
+}
+.titulo h2{
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.titulo h2:hover{
+    text-decoration: underline;
 }
 .login{
-    width: 400px;
-    background-color: rgb(61, 61, 61);
-    margin: 50px auto ;
-    padding: 20px 30px 25px;
-    border-top: 40px solid var(--color-secundario);
-    transition: 0.3s;
-    box-shadow: 0 0 30px #000;
+    text-align: left;
 }
-.login a{
-    color: #000;
-    text-decoration: none;
+label{
+    font-size: 1.3em;
 }
-.login a:hover{
-    text-decoration:underline;
-}
-.ingreso{
+input,button{
+    font-size: 1.0em;
+    box-sizing: border-box;
     width: 100%;
-    border: 2px solid var(--color-primario);
+    background: #111;
+    border: 2px solid #111;
     margin-bottom: 15px;
-    padding: 12px 10px;
-    font-size: 15px;
-    color: rgb(197, 197, 197);
-    background: rgb(31, 31, 31);
+    margin-top: 5px;
+    color: #ccc;
+    padding: 10px 10px;
+    border-radius: 5px;
     outline: none;
     transition: 0.3s;
 }
-.ingreso:hover{
-    border-radius: 15px;
-    border: 2px solid var(--color-secundario);
-    box-shadow: 4px 4px 37px rgba(33, 0, 83, 0.49);
+input:hover{
+    border: 2px solid #141414;
+    box-shadow: 0 0 18px #999;
 }
-.ingreso:focus{
-    border-radius: 15px;
-    border: 2px solid var(--color-secundario);
-    box-shadow: 4px 4px 37px rgba(33, 0, 83, 0.49);
+input:focus{
+    border: 2px solid #999;
+    box-shadow: 0 0 18px #999;
+}
+.goregister{
+    text-align: left;
+}
+.goregister p{
+    margin: 0;
+    margin-top: 15px;
+    color: #ccc;
+    margin-left: 10px;
+}
+.goregister a{
+    text-decoration: none;
+    color: #eee;
+    font-weight: 700;
+}
+.goregister a:hover{
+    text-decoration: underline;
 }
 .boton{
-    width: 100%;
-    height: 40px;
-    border: none;
-    background: var(--color-primario);
-    border-radius: 6px;
-    font-size: 15px;
-    transition: 0.5s;
+    text-align: center;
 }
-.boton:hover{
-    background: var(--color-secundario);
-    box-shadow: 4px 4px 0 rgba(33, 0, 83, 0.49);
-    color: #fff;
+button{
+    /* margin-top: 25px; */
+    text-align: center;
+    font-family: "inria Sans", 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 80%;
+    padding: 12px;
+    transition: 0.3s;
 }
-.cuentas{
-    margin-top: 10px;
+button:hover{
+    border: 2px solid #ddd;
+    background-color: #ddd;
+    color: #000;
+    box-shadow: 8px 8px 0 #111;
 }
-.cuentas p{
-    margin-top: 5px;
-}
-.pie{
-    background-color: #000000;
-    color:rgb(61, 61, 61);
-}
-.subpie2{
-    display: flex;
-    justify-content: space-between;
-}
-.subpie2 a{
-    color:rgb(61, 61, 61);
-    text-decoration: none;
-}
-.subpie2 a:hover{
-    text-decoration:underline;
+button:active{
+    transform: scale(0.95);
+    box-shadow: none;
 }

@@ -23,18 +23,20 @@
         $consulta = "select email from usuario where email = '$email'";
         $resultado = mysqli_query($conexion, $consulta);
 
-        if($mysql_row_number($resultado) > 0){
-            echo "el email ingresado esta repetido, porfavor ingrese uno nuevo";
-        }
-        else{
+        // if($mysql_row_number($resultado) > 0){
+        //     echo "el email ingresado esta repetido, porfavor ingrese uno nuevo";
+        // }
+        // else{
             $query = "insert into usuario values(null,'$email','$nombre', '$apellido','$direccion','$contrasena','$telefono');";
             $resultado=mysqli_query($conexion, $query);
     
     
             $resultados = mysqli_query($conexion,"select * from usuario;");
     
-        }
+        
         mysqli_close($conexion);
+    
+
     }
 
     ?>

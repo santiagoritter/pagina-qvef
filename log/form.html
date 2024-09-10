@@ -1,51 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Registro QVEF</title>
 </head>
 <body>
-    <header>
-        <div class="cabeza">
-            <img src="/img/logo_negro_QVEF.png" alt="Logo">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/log/login.html">Login</a></li>
-            </ul>
-        </div>
-    </header>
     <main>
-        <div>
-            <form class="login" action="/log/form.php" method="post">
-                <input class="ingreso" type="text" name="nombre" placeholder="Ingresar Nombre" required>
-                <input class="ingreso" type="text" name="apellido" placeholder="Ingresar Apellido" required >
-                <input class="ingreso" type="email" name="email" placeholder="Ingresar email" required>
-                <input class="ingreso" type="text" name="direccion" placeholder="Ingresar direccion" required>
-                <input class="ingreso" type="password" name="contrasena" placeholder="Ingresar contrasena" required>
-                <input class="ingreso" type="text" name="telefono" placeholder="Ingresar telefono" required>
-                <label class="terminoscondiciones">
-                    <input class="checkbox" type="checkbox">
-                    <p>Acepto los <a href="#">Terminos y Condiciones</a></a></p>
-                </label>
-                <div class="div-boton">
-                    <input class="boton" type="submit" value="Enviar">
+        <div class="inicio">
+            <h1>QUE VIVA EL FUTBOL</h1>
+            <a href="#registro1" class="material-symbols-outlined">keyboard_double_arrow_down</a>
+        </div>
+
+        <form id="registro1" action="/log/form.php" method="post">
+            <div class="imagen">
+                <img src="/img/logo_blanco_QVEF.png" alt="logoQVEF">
+            </div>
+            <div class="titulo">
+                <h2>REGISTRO</h2>
+            </div>
+            <div class="login">
+                <div class="ingreso">
+                    <label>Nombre
+                        <input type="text" name="nombre" required>
+                    </label>
                 </div>
-
-            </form>
-        </div>
+                <div class="ingreso">
+                    <label>Apellido
+                        <input type="text" name="apellido" required>
+                    </label>
+                </div>
+                <div class="ingreso">
+                    <label>Email
+                        <input type="email" name="email" required>
+                    </label>
+                </div>
+                <div class="ingreso">
+                    <label>Direccion
+                        <input type="text" name="direccion" required>
+                    </label>
+                </div>
+                <div class="ingreso">
+                    <label>Contraseña
+                        <input type="password" name="contrasena" required>
+                    </label>
+                </div>
+                <div class="ingreso">
+                    <label>Telefono
+                        <input type="text" name="telefono" required>
+                    </label>
+                </div>
+                <div class="gologin">
+                    <p>Ya tenes cuenta? <a href="/log/login.html"> Ingresa acá!</a></p>
+                </div>
+                <div class="boton">
+                    <button>Enviar</button>
+                </div>
+            </div>
+        </form>
     </main>
-    <footer>
-        <div class="pie">
-            <div class="subpie1">
-
-            </div>
-            <div class="subpie2">
-                <p>Copyright© 2024 Miceli Francisco & Tabuada Lorenzo. Todos los derechos reservados.</p>
-                <a href="#">Terminos y Condiciones</a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
