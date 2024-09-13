@@ -48,7 +48,7 @@ body{
     display: none;
 }
 .pantallainicialcelu , .pantallainicialpc{
-    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(/img/monumental2.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(img/monumental2.jpeg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
