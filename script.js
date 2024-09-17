@@ -26,7 +26,7 @@ function moveSlide(step) {
 showSlide(slideIndex);
 
 // Autoplay functionality
-const autoplayInterval = 5000; // Change slide every 5 seconds
+const autoplayInterval = 2000; // Change slide every 2 seconds
 setInterval(() => {
     moveSlide(1);
 }, autoplayInterval);
