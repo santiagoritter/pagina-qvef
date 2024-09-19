@@ -1,32 +1,39 @@
-let slideIndex = 0;
-const slidesToShow = 3; // Number of slides to show at once
-const totalSlides = document.querySelectorAll('.carousel-item').length;
+let currentIndex = 0;
+let visibleImages = 5; // Por defecto para pantallas grandes
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    const totalSlides = slides.length;
+function updateVisibleImages() {
+    const width = window.innerWidth;
 
-    if (index >= totalSlides - slidesToShow + 1) {
-        slideIndex = 0; // Loop back to the start
-    } else if (index < 0) {
-        slideIndex = totalSlides - slidesToShow; // Loop to the end
+    if (width <= 480) {
+        visibleImages = 1; // Para pantallas muy pequeñas
+    } else if (width <= 768) {
+        visibleImages = 2; // Para pantallas pequeñas
     } else {
-        slideIndex = index;
+        visibleImages = 5; // Para pantallas grandes
     }
 
-    const offset = -slideIndex * (100 / slidesToShow);
-    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    // Actualiza el desplazamiento para reflejar el número de imágenes visibles
+    moveSlide(0); // Para recalcular el desplazamiento
 }
 
-function moveSlide(step) {
-    showSlide(slideIndex + step);
+function moveSlide(direction) {
+    const images = document.querySelector('.carousel-images');
+    const totalImages = document.querySelectorAll('.carousel-images img').length;
+
+    let newIndex = currentIndex + direction;
+
+    if (newIndex < 0) {
+        newIndex = totalImages - visibleImages; // Ir al final
+    } else if (newIndex > totalImages - visibleImages) {
+        newIndex = 0; // Volver al principio
+    }
+
+    currentIndex = newIndex;
+
+    const offset = -currentIndex * (100 / visibleImages);
+    images.style.transform = `translateX(${offset}%)`;
 }
 
-// Initialize
-showSlide(slideIndex);
-
-// Autoplay functionality
-const autoplayInterval = 2000; // Change slide every 2 seconds
-setInterval(() => {
-    moveSlide(1);
-}, autoplayInterval);
+// Llama a esta función al cargar la página y al redimensionar
+updateVisibleImages();
+window.addEventListener('resize', updateVisibleImages);

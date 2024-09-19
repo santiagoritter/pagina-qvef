@@ -11,7 +11,7 @@ html{
 }
 body{
     font-family: "inria Sans",'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-    background-color: #b9b9b9;
+    background-color: #ddd;
     overflow-x: hidden;
 }
 .todo{
@@ -166,7 +166,7 @@ h1{
 .headcelu{
     display: flex;
     justify-content: space-between;
-    background-color: #e0e0e0;
+    background-color: #fff;
 }
 .izquierdaHC{
     display: flex;
@@ -272,45 +272,54 @@ h1{
 }
 .carousel {
     position: relative;
-    width: 100%;
+    width: 100%; /* Ajusta el ancho según sea necesario */
     overflow: hidden;
-    border-radius: 10px;
 }
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ;
+    transition: transform 0.5s ease-in-out;
 }
-.carousel-item {
-    min-width: 33.33%; /* Show 3 images at a time */
-    box-sizing: border-box;
-    padding: 3px;
+.carousel-images img {
+    width: 20%; /* Cada imagen ocupa el 20% del ancho total */
+    height: auto; /* Mantiene la proporción de la imagen */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    object-fit: cover;
+    padding:0 3px;
 }
-.carousel-item img {
-    width: 100%;
-    border-bottom: 2px solid #ddd;
+@media (max-width: 768px) { /* Cambia el valor según tu diseño */
+    .carousel-images img {
+        width: 33.33%; /* Para pantallas medianas (3 imágenes) */
+    }
 }
-.prev, .next {
+
+@media (max-width: 480px) { /* Cambia el valor según tu diseño */
+    .carousel-images img {
+        width: 50%; /* Para pantallas pequeñas (2 imágenes) */
+    }
+}
+.prev,.next {
     position: absolute;
     top: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
     transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: #fffc;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
 }
-.prev {
+.prev:hover,.next:hover {
+    background-color: #000c;
+    color: #fff;
+}
+    .prev {
     left: 10px;
 }
 .next {
     right: 10px;
 }
-
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
 .pie{
@@ -338,7 +347,7 @@ h1{
     .headpc{
         display: flex;
         justify-content: space-between;
-        background-color: #ddd ;
+        background-color: #fff ;
     }
     .headpc .material-symbols-outlined{
         cursor: pointer;
