@@ -191,6 +191,7 @@ h1{
     padding-right: 10px;
 }
 .perfildesplegable{
+    margin-top: 4px;
 }
 .perfildesplegable:hover .perfilcategorias{
     display: flex;
@@ -210,7 +211,7 @@ h1{
     background-color: #222;
     box-shadow: 0 0 5px #fff;
     z-index: 2;
-    transition: 3s;
+    transition: 0.3s;
 }
 .perfilcategorias li{
     list-style: none;
@@ -347,7 +348,7 @@ h1{
     .headpc{
         display: flex;
         justify-content: space-between;
-        background-color: #fff ;
+        background-color: #f1f1f1 ;
     }
     .headpc .material-symbols-outlined{
         cursor: pointer;
@@ -389,6 +390,7 @@ h1{
     }
     .desplegable{
         padding-right: 5px;
+        margin-top: 4px;
     }
     .desplegable:hover .categorias{
         display: flex;
