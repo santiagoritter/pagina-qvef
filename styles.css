@@ -11,7 +11,7 @@ html{
 }
 body{
     font-family: "inria Sans",'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-    background-color: #ddd;
+    background-color: #e6e4e4;
     overflow-x: hidden;
 }
 .todo{
@@ -231,8 +231,6 @@ h1{
 .slider {
     background: #222;
     width: 100vw;
-    height: auto;
-    margin: auto;
     overflow: hidden;
     z-index: 1;
 }
@@ -263,7 +261,7 @@ h1{
 }
 
 .destacados{
-    display: flex;  
+    display: flex;
     flex-direction: column;
 }
 .destacados h3{
@@ -272,54 +270,84 @@ h1{
     margin: 30px 0 30px 30px;
 }
 .carousel {
-    position: relative;
-    width: 100%; /* Ajusta el ancho según sea necesario */
-    overflow: hidden;
-}
-.carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    width: 100vw;
 }
-.carousel-images img {
-    width: 20%; /* Cada imagen ocupa el 20% del ancho total */
-    height: auto; /* Mantiene la proporción de la imagen */
-    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
-    object-fit: cover;
-    padding:0 3px;
+.tarjeta{
+    border: 3px solid #eee;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 6px;
+    transition: 0.3s;
 }
-@media (max-width: 768px) { /* Cambia el valor según tu diseño */
-    .carousel-images img {
-        width: 33.33%; /* Para pantallas medianas (3 imágenes) */
+.tarjeta:hover{
+    border: 3px solid #bbb;
+    border-radius: 17px;
+}
+.tarjeta img{
+    width: 100%;
+    border-radius: 17px 17px 0 0;
+}
+.tarjetainfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+}
+@media (max-width: 768px) {
+    .tarjeta {
+        width: calc(100% / 2 - 10px); /* 2 tarjetas por fila en pantallas medianas */
     }
+}
+.deslizantes h3{
+    font-size: 2em;
+    font-weight: 400;
+    margin: 30px 0 30px 30px;
 }
 
-@media (max-width: 480px) { /* Cambia el valor según tu diseño */
-    .carousel-images img {
-        width: 50%; /* Para pantallas pequeñas (2 imágenes) */
+.cuatro_imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery img {
+    max-width: 300px;
+    max-height: 300px;
+}
+@media(max-width: 768px){
+    .gallery img{
+        max-width: 200px ;
     }
 }
-.prev,.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+@media(max-width: 480px){
+    .gallery img{
+        max-width: 100px ;
+    }
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.arrow {
+    background: none;
     border: none;
-    border-radius: 50%;
-    background-color: #fffc;
-    color: #000;
-    padding: 10px;
     cursor: pointer;
+    color: #333;
     transition: 0.3s;
-    outline: none;
+    border-radius: 50px;
 }
-.prev:hover,.next:hover {
-    background-color: #000c;
-    color: #fff;
-}
-    .prev {
-    left: 10px;
-}
-.next {
-    right: 10px;
+.arrow:hover {
+    color: #ddd;
+    background: #0006;
 }
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
@@ -330,6 +358,8 @@ h1{
 .subpie2{
     display: flex;
     justify-content: space-between;
+    padding: 2px;
+    border-top: 1px solid #333;
 }
 .subpie2 a{
     color:#3d3d3d;

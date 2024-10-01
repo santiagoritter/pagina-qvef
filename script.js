@@ -1,39 +1,29 @@
-let currentIndex = 0;
-let visibleImages = 5; // Por defecto para pantallas grandes
+const images1 = [
+    'img/botineslolo.jpg',
+    'img/camiseta_boca_lolo.jpg',
+    'img/canilleras_lolo.jpg'
+];
 
-function updateVisibleImages() {
-    const width = window.innerWidth;
+const images2 = [
+    'img/pelota_lolo.jpg',
+    'img/pelota_fran.jpg',
+];
 
-    if (width <= 480) {
-        visibleImages = 1; // Para pantallas muy pequeñas
-    } else if (width <= 768) {
-        visibleImages = 2; // Para pantallas pequeñas
-    } else {
-        visibleImages = 5; // Para pantallas grandes
-    }
+const images3 = [
+    'img/camiseta_river_fran.jpg',
+    'img/botines_blancos_fran.jpg',
+    'img/guantes_nike_fran.jpg'
+];
 
-    // Actualiza el desplazamiento para reflejar el número de imágenes visibles
-    moveSlide(0); // Para recalcular el desplazamiento
+function setupGallery(imageIds, buttonIds, images) {
+    let currentIndex = 0;
+    
+    document.getElementById(buttonIds).addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById(imageIds).src = images[currentIndex];
+    });
 }
 
-function moveSlide(direction) {
-    const images = document.querySelector('.carousel-images');
-    const totalImages = document.querySelectorAll('.carousel-images img').length;
-
-    let newIndex = currentIndex + direction;
-
-    if (newIndex < 0) {
-        newIndex = totalImages - visibleImages; // Ir al final
-    } else if (newIndex > totalImages - visibleImages) {
-        newIndex = 0; // Volver al principio
-    }
-
-    currentIndex = newIndex;
-
-    const offset = -currentIndex * (100 / visibleImages);
-    images.style.transform = `translateX(${offset}%)`;
-}
-
-// Llama a esta función al cargar la página y al redimensionar
-updateVisibleImages();
-window.addEventListener('resize', updateVisibleImages);
+setupGallery('botines', 'next', images1);
+setupGallery('botines-2', 'next-2', images2);
+setupGallery('botines-3', 'next-3', images3);
