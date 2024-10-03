@@ -70,6 +70,9 @@ h1{
     letter-spacing: 0.15em;
     text-shadow: 8px 0px 0 #bbb;
 }
+.flechita{
+    
+}
 @media(max-width: 540px){
     h1{
         font-size: 7em;
@@ -274,7 +277,8 @@ h1{
     width: 100vw;
 }
 .tarjeta{
-    border: 3px solid #eee;
+    min-width: 150px;
+    border: 3px solid #fff;
     background: #fff;
     border-radius: 5px;
     margin: 0 6px;
@@ -282,7 +286,7 @@ h1{
 }
 .tarjeta:hover{
     border: 3px solid #bbb;
-    border-radius: 17px;
+    border-radius: 14px;
 }
 .tarjeta img{
     width: 100%;
@@ -346,7 +350,7 @@ h1{
     border-radius: 50px;
 }
 .arrow:hover {
-    color: #ddd;
+    color: #e6e6e6;
     background: #0006;
 }
 /* *****************  PIEEEEEEEEEEE  ***************** */
