@@ -274,10 +274,12 @@ h1{
 }
 .carousel {
     display: flex;
+    justify-content: center;
     width: 100vw;
 }
 .tarjeta{
     min-width: 150px;
+    max-width: 180px;
     border: 3px solid #fff;
     background: #fff;
     border-radius: 5px;
@@ -286,10 +288,12 @@ h1{
 }
 .tarjeta:hover{
     border: 3px solid #bbb;
-    border-radius: 14px;
+    border-radius: 10px;
+    filter: brightness(0.85);
 }
 .tarjeta img{
     width: 100%;
+    max-height: 170px;
     border-radius: 17px 17px 0 0;
 }
 .tarjetainfo{
@@ -300,11 +304,7 @@ h1{
     background: #fff;
     border-radius: 0 0 15px 15px;
 }
-@media (max-width: 768px) {
-    .tarjeta {
-        width: calc(100% / 2 - 10px); /* 2 tarjetas por fila en pantallas medianas */
-    }
-}
+
 .deslizantes h3{
     font-size: 2em;
     font-weight: 400;
@@ -330,6 +330,7 @@ h1{
         max-width: 200px ;
     }
 }
+@media(max-width: )
 @media(max-width: 480px){
     .gallery img{
         max-width: 100px ;
