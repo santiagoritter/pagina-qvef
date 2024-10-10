@@ -11,7 +11,7 @@ html{
 }
 body{
     font-family: "inria Sans",'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-    background-color: #e6e4e4;
+    background-color: #eee;
     overflow-x: hidden;
 }
 .todo{
@@ -28,7 +28,7 @@ body{
 }
 ::-webkit-scrollbar-thumb {
     background-color: #ddd;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -185,7 +185,6 @@ h1{
     transition: 0.5s;
 }
 .logohead:hover{
-    filter: drop-shadow(0px 0px 7px rgb(163, 163, 163));
     transform: scale(1.05);
 }
 .derechaHC{
@@ -243,7 +242,7 @@ h1{
 .slider .slide-track {
     display: flex;
     animation: scroll 5s linear infinite;
-    -webkit-animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 18s linear infinite;
     width: calc(200px * 14);
 }
 .slider .slide {
@@ -274,7 +273,7 @@ h1{
 }
 .carousel {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 100vw;
 }
 .tarjeta{
@@ -300,59 +299,16 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background: #fff;
     border-radius: 0 0 15px 15px;
 }
-
-.deslizantes h3{
-    font-size: 2em;
-    font-weight: 400;
-    margin: 30px 0 30px 30px;
+.desc{
+    font-size: 1em;
+    color: #444;
+    font-weight: 100;
 }
 
-.cuatro_imagenes{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gallery img {
-    max-width: 300px;
-    max-height: 300px;
-}
-@media(max-width: 768px){
-    .gallery img{
-        max-width: 200px ;
-    }
-}
-@media(max-width: )
-@media(max-width: 480px){
-    .gallery img{
-        max-width: 100px ;
-    }
-}
-.productos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-}
-.arrow {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #333;
-    transition: 0.3s;
-    border-radius: 50px;
-}
-.arrow:hover {
-    color: #e6e6e6;
-    background: #0006;
 }
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
@@ -383,10 +339,12 @@ h1{
     .headpc{
         display: flex;
         justify-content: space-between;
-        background-color: #f1f1f1 ;
+        background-color: #fff ;
     }
     .headpc .material-symbols-outlined{
         cursor: pointer;
+        height: 24px;
+        width: 24px;
     }
     .izquierdaHP{
         display: flex;
@@ -396,11 +354,13 @@ h1{
         display: flex;
         align-items: center;
     }
+
     .contenedorbusqueda{
         display: flex;
         align-items: center;
-        border-radius: 8px;
-        background-color: #fff;
+        border-radius: 6px;
+        padding: 3px;
+        background-color: #eee;
     }
     .contenedorbusqueda input{
         outline: none;
@@ -409,12 +369,14 @@ h1{
         border: none;
         border-radius: 5px;
         font-size: 0.9rem;
-        background-color: #fff;
+        background-color: #eee;
     }
     .contenedorbusqueda button{
         border-radius: 5px;
         border: none;
         background: none;
+        height: 24px;
+        width: 24px;
     }
     .contenedorbusqueda img{
         width: 30px;
