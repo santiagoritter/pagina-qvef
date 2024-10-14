@@ -143,7 +143,6 @@ body{
         transform: translateX(calc(-200px * 7));
     }
 }
-
 @media(min-width: 768px){
     .headcelu{
         display: none;

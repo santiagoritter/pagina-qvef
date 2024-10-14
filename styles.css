@@ -262,10 +262,6 @@ h1{
     }
 }
 
-.destacados{
-    display: flex;
-    flex-direction: column;
-}
 .destacados h3{
     font-size: 2em;
     font-weight: 400;
@@ -274,11 +270,15 @@ h1{
 .carousel {
     display: flex;
     justify-content: start;
-    width: 100vw;
+}
+@media(min-width: 1100px){
+    .carousel{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 .tarjeta{
-    min-width: 150px;
-    max-width: 180px;
+    max-width: 300px;
     border: 3px solid #fff;
     background: #fff;
     border-radius: 5px;
@@ -293,23 +293,26 @@ h1{
 .tarjeta img{
     width: 100%;
     max-height: 170px;
-    border-radius: 17px 17px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 .tarjetainfo{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.1em;
+    font-size: 1em;
     background: #fff;
     border-radius: 0 0 15px 15px;
 }
+.tarjetainfo > *{
+    padding: 1px 0;
+}
 .desc{
-    font-size: 1em;
+    font-size: 0.9em;
     color: #444;
     font-weight: 100;
 }
 
-}
+
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
 .pie{
@@ -359,7 +362,7 @@ h1{
         display: flex;
         align-items: center;
         border-radius: 6px;
-        padding: 3px;
+        padding: 3px 3px 3px 9px;
         background-color: #eee;
     }
     .contenedorbusqueda input{
