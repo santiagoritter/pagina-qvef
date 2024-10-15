@@ -70,9 +70,7 @@ h1{
     letter-spacing: 0.15em;
     text-shadow: 8px 0px 0 #bbb;
 }
-.flechita{
-    
-}
+
 @media(max-width: 540px){
     h1{
         font-size: 7em;
@@ -192,9 +190,6 @@ h1{
     align-items: center;
     padding-right: 10px;
 }
-.perfildesplegable{
-    margin-top: 4px;
-}
 .perfildesplegable:hover .perfilcategorias{
     display: flex;
 }
@@ -203,6 +198,12 @@ h1{
 }
 .perfildesplegable:hover span{
     color: #444;
+}
+.bolsa-compra:hover span{
+    color: #444;
+}
+.bolsa-compra .perfildesplegable{
+    height: 24px;
 }
 .perfilcategorias{
     display: none;
@@ -379,7 +380,6 @@ h1{
         border: none;
         background: none;
         height: 24px;
-        width: 24px;
     }
     .contenedorbusqueda img{
         width: 30px;
