@@ -11,7 +11,6 @@ html{
 }
 body{
     font-family: "inria Sans",'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-    background-color: #eee;
     overflow-x: hidden;
 }
 .todo{
@@ -239,6 +238,9 @@ h1{
 }
 .slide p{
     color: #999;
+    display: flex;
+    height: 28px;
+    align-items: center;
 }
 .slider .slide-track {
     display: flex;
@@ -280,16 +282,15 @@ h1{
 }
 .tarjeta{
     max-width: 300px;
+    margin: 0 6px;
     border: 3px solid #fff;
     background: #fff;
-    border-radius: 5px;
-    margin: 0 6px;
+    box-shadow: 0 0 15px #ddd;
     transition: 0.3s;
 }
 .tarjeta:hover{
-    border: 3px solid #bbb;
-    border-radius: 10px;
-    filter: brightness(0.85);
+    box-shadow: none;
+    filter: brightness(0.95);
 }
 .tarjeta img{
     width: 100%;
@@ -313,6 +314,16 @@ h1{
     font-weight: 100;
 }
 
+.productos-varios{
+    display: flex;
+}
+.product{
+    max-width: 300px;
+}
+.product img{
+    width: 100%;
+    max-height: 200px;
+}
 
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
