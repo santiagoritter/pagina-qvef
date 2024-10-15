@@ -185,7 +185,7 @@ h1{
     transition: 0.5s;
 }
 .logohead:hover{
-    transform: scale(1.05);
+    filter: brightness(1.7);
 }
 .derechaHC{
     display: flex;
