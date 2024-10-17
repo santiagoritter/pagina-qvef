@@ -290,7 +290,7 @@ h1{
 }
 .tarjeta:hover{
     box-shadow: none;
-    filter: brightness(0.95);
+    filter: brightness(0.91);
 }
 .tarjeta img{
     width: 100%;
@@ -313,24 +313,49 @@ h1{
     color: #444;
     font-weight: 100;
 }
-
+.content-varios{
+    width: 100vw;
+}
 .productos-varios{
     display: flex;
+    margin-top: 50px;
 }
 .product{
-    max-width: 300px;
+    width: 25%;
+    transition: 0.6s;
+}
+.product:hover{
+    transform: scale(0.9);
 }
 .product img{
     width: 100%;
-    max-height: 200px;
+    height: 100%;
 }
+
+.image-neymar{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/botines_neymar.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+.image-neymar:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(img/botines_neymar.jpg);
+}
+
+
 .gallery-contact{
     margin-top: 50px;
     display: flex;
+    justify-content: center;
 }
 .gallery-contact span{
     font-size: 30px;
     cursor: pointer;
+    color: #222;
 }
 .gallery-ig{
     display: flex;
