@@ -41,6 +41,7 @@ form{
 }
 .titulo h2:hover{
     text-decoration: underline;
+    cursor: default;
 }
 .login{
     text-align: left;

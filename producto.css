@@ -38,125 +38,6 @@ body{
     scrollbar-width: thin;
     scrollbar-color: #ddd #222;
 } */
-
-
-.pantallainicialpc{
-    display: none;
-    justify-content: center;
-}
-.iniciopc{
-    display: none;
-}
-.pantallainicialcelu , .pantallainicialpc{
-    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(img/monumental2.jpeg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-}
-.pantallainicialpc{
-    display: none;
-}
-h1{
-    color: #fff;
-    font-size: 8.5em;
-    font-weight: 900;
-    letter-spacing: 0.15em;
-    text-shadow: 8px 0px 0 #bbb;
-}
-
-@media(max-width: 540px){
-    h1{
-        font-size: 7em;
-    }
-    .inicio .material-symbols-outlined {
-        position: relative;
-        top: 150px;
-    }
-    @media(max-width: 480px){
-        h1{
-            font-size: 6em;
-        }
-        .inicio .material-symbols-outlined {
-            position: relative;
-            top: 180px;
-        }
-    
-    @media(max-width: 430px){
-        h1{
-            font-size: 5.5em;
-        }
-        .inicio .material-symbols-outlined {
-            position: relative;
-            top: 180px;
-        }
-    
-    @media(max-width: 380px){
-        h1{
-            font-size: 5em;
-        }
-        .inicio .material-symbols-outlined {
-            position: relative;
-            top: 180px;
-        }
-    
-    @media(max-width: 320px){
-        h1{
-            font-size: 4em;
-        }
-        .inicio .material-symbols-outlined {
-            position: relative;
-            top: 180px;
-        }
-    }
-    }
-    }
-    }
-}
-.iniciocelu .material-symbols-outlined {
-    position: relative;
-    color: #fff;
-    font-size: 45px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.iniciocelu .material-symbols-outlined:hover{
-    transform: scale(1.5);
-    text-shadow: 0 0 20px #999;
-}
-
-@media(min-width: 768px){
-    .pantallainicialcelu{
-        display: none;
-    }
-    .pantallainicialpc{
-        display: flex;
-        
-    }
-    .iniciopc{
-        display: flex;
-        flex-direction: column;
-    }
-    .iniciopc .material-symbols-outlined {
-        position: relative;
-        color: #fff;
-        font-size: 45px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .iniciopc .material-symbols-outlined:hover{
-        transform: scale(1.5);
-        text-shadow: 0 0 20px #999;
-    }
-}
-
 .headpc{
     display: none;
 }
@@ -230,6 +111,7 @@ h1{
     color: #aaa;
 }
 
+
 .slider {
     background: #222;
     width: 100vw;
@@ -276,6 +158,8 @@ h1{
     }
     .headpc .material-symbols-outlined{
         cursor: pointer;
+        height: 24px;
+        width: 24px;
     }
     .izquierdaHP{
         display: flex;
@@ -285,16 +169,18 @@ h1{
         display: flex;
         align-items: center;
     }
+
     .contenedorbusqueda{
         display: flex;
         align-items: center;
-        border-radius: 8px;
+        border-radius: 6px;
+        padding: 3px 3px 3px 9px;
         background-color: #eee;
     }
     .contenedorbusqueda input{
         outline: none;
         width: 300px;
-        padding: 8px 3px;
+        padding: 5px 3px;
         border: none;
         border-radius: 5px;
         font-size: 0.9rem;
@@ -483,28 +369,7 @@ h1{
 .gallery-info button:active{
     transform: scale(0.95);
 }
-.gallery-contact{
-    margin-top: 50px;
-    display: flex;
-}
-.gallery-contact span{
-    font-size: 30px;
-    cursor: pointer;
-}
-.gallery-ig{
-    display: flex;
-}
-.gallery-ig li{
-    list-style-type: none;
-    margin-left: 8px;
-}
-.gallery-ig a{
-    color: #222;
-    text-decoration: none;
-}
-.gallery-ig a:hover{
-    color: #999;
-}
+
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
 .pie{
