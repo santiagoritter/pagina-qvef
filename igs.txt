@@ -1,0 +1,33 @@
+.gallery-contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.gallery-contact span{
+    font-size: 30px;
+    cursor: pointer;
+    color: #222;
+}
+.gallery-ig{
+    display: flex;
+}
+.gallery-ig li{
+    list-style-type: none;
+    margin-left: 8px;
+}
+.gallery-ig a{
+    color: #222;
+    text-decoration: none;
+}
+.gallery-ig a:hover{
+    color: #777;
+}
+
+
+            <div class="gallery-contact">
+                <span class="material-symbols-outlined psychology">psychology</span>
+                <ul class="gallery-ig">
+                    <li><a href="https://www.instagram.com/franmicelii/">Francisco Miceli</a></li>
+                    <li><a href="https://www.instagram.com/lolotabuada_/">Lorenzo Tabuada</a></li>
+                </ul>
+            </div>

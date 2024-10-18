@@ -67,7 +67,7 @@ h1{
     font-size: 8.5em;
     font-weight: 900;
     letter-spacing: 0.15em;
-    text-shadow: 8px 0px 0 #bbb;
+    text-shadow: 8px 0px 0 #888;
 }
 
 @media(max-width: 540px){
@@ -333,61 +333,59 @@ h1{
 }
 
 .image-neymar{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/botines_neymar.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    margin-top: 50px;
-}
-.image-neymar:hover{
-    background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(img/botines_neymar.jpg);
-}
-
-
-.gallery-contact{
-    margin-top: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(img/botines_neymar.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin-top: 50px;
 }
-.gallery-contact span{
-    font-size: 30px;
-    cursor: pointer;
-    color: #222;
+
+.image-neymar h2{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 6.4em;
 }
-.gallery-ig{
-    display: flex;
+.image-neymar h3{
+    color: #fff;
+    font-size: 1.7em;
+    letter-spacing: 1em;
 }
-.gallery-ig li{
-    list-style-type: none;
-    margin-left: 8px;
+.image-neymar img{
+    margin-top: 60px;
+    width: 100px;
+    transition: 0.3s;
 }
-.gallery-ig a{
-    color: #222;
-    text-decoration: none;
+.image-neymar img:hover{
+    filter: drop-shadow(0 0 20px #888);
 }
-.gallery-ig a:hover{
-    color: #777;
-}
+
+
+
 /* *****************  PIEEEEEEEEEEE  ***************** */
 
-.pie{
+.footer{
     background-color: #222;
     color:#555;
 }
-.subpie2{
+
+.sub-footer2{
     display: flex;
     justify-content: space-between;
     padding: 2px;
-    border-top: 1px solid #333;
+    border-top: 1px solid #444;
 }
-.subpie2 a{
-    color:#3d3d3d;
+.sub-footer2 a{
+    color:#555;
     text-decoration: none;
 }
-.subpie2 a:hover{
+.sub-footer2 a:hover{
     text-decoration:underline;
 }
 
