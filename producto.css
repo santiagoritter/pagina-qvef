@@ -10,7 +10,7 @@ html{
     padding: 0;
 }
 body{
-    font-family: "inria Sans",'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-family: "inria Sans",sans-serif;
     overflow-x: hidden;
 }
 .todo{
