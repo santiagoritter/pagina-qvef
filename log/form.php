@@ -35,8 +35,5 @@
     
         
         mysqli_close($conexion);
-    
-
     }
-
     ?>

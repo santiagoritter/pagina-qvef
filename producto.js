@@ -1,9 +1,9 @@
 const images = [
-    '/img/botines_rojos_phantom1.jpeg',
-    '/img/botines_rojos_phantom2.jpeg',
-    '/img/botines_rojos_phantom3.jpeg',
-    '/img/botines_rojos_phantom4.jpeg',
-    '/img/botines_rojos_phantom_pezzella.jpeg',
+    'img/botines_rojos_phantom1.jpeg',
+    'img/botines_rojos_phantom2.jpeg',
+    'img/botines_rojos_phantom3.jpeg',
+    'img/botines_rojos_phantom4.jpeg',
+    'img/botines_rojos_phantom_pezzella.jpeg',
 ];
 
 let currentIndex = 0;
