@@ -1,7 +1,3 @@
-:root{
-    --color-primario:#222;
-    --color-secundario: #ddd;
-}
 html{
     scroll-behavior: smooth;
 }
@@ -12,6 +8,7 @@ html{
 body{
     font-family: "inria Sans",sans-serif;
     overflow-x: hidden;
+    color: #222;
 }
 .todo{
     min-height: 100vh;
@@ -395,7 +392,7 @@ h1{
 
 footer{
     background-color: #222;
-    color:#777;
+    color:#999;
 }
 .footer-container{
     padding-top: 20px;
@@ -411,6 +408,16 @@ footer{
     width: 33.3%;
     padding: 0 50px 20px 20px;
 }
+.footer-links a{
+    color: #999;
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: #bbb;
+}
+.footer-links img{
+    width: 150%;
+}
 .footer-links h4{
     font-weight: 900;
     text-transform: uppercase;
@@ -418,11 +425,11 @@ footer{
     margin-bottom: 10px;
 }
 .footer-links li{
+    padding: 5px 0;
     list-style-type: none;
 }
 .footer-links p{
     font-weight: 100;
-    padding: 5px 0;
     font-size: 0.9em;
 }
 
@@ -436,11 +443,11 @@ footer{
     text-align: center;
 }
 .sub-footer2 a{
-    color:#777;
+    color:#999;
     text-decoration: none;
 }
 .sub-footer2 a:hover{
-    color: #aaa;
+    color: #bbb;
 }
 .gallery-contact{
     padding: 20px 0;
@@ -451,7 +458,7 @@ footer{
 .gallery-contact span{
     font-size: 30px;
     cursor: default;
-    color: #777;
+    color: #999;
 }
 .gallery-ig{
     display: flex;
@@ -461,11 +468,11 @@ footer{
     margin-left: 8px;
 }
 .gallery-ig a{
-    color: #777;
+    color: #999;
     text-decoration: none;
 }
 .gallery-ig a:hover{
-    color: #aaa;
+    color: #bbb;
 }
 
 /* *****************  PIEEEEEEEEEEE  ***************** */
